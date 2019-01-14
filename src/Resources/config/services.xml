@@ -36,8 +36,8 @@
 
         <service id="cmf.block.action" class="Symfony\Cmf\Bundle\BlockBundle\Block\ActionBlockService">
             <tag name="sonata.block" />
-            <argument type="service" id="request_stack" />
             <argument>cmf.block.action</argument>
+            <argument type="service" id="request_stack" />
             <argument type="service" id="sonata.templating" />
             <argument type="service" id="fragment.handler" />
         </service>
